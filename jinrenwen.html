@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今人文</title>
+<link rel="stylesheet" href="./css/reset.css"> 
+<link rel="stylesheet" href="./css/iconfont/iconfont.css">
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+background-image: linear-gradient(120deg, #fce6c3 0%, #fce48e 100%);
+background-size: cover;
+}
+
+.shell {
+width: 1226px;
+margin: 0 auto;
+height: 500px;
+display: flex;
+}
+.card {
+flex-basis: 15%;
+position: relative;
+overflow: hidden;
+}
+.card:not(:nth-child(1)) {
+margin-left: 20px;
+}
+.card:hover {
+overflow: initial;
+}
+.box {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transition: all .1s cubic-bezier(0.165, 0.84, 0.44, 1);
+overflow: hidden;
+border-radius: 10px;
+background-image: linear-gradient(180deg, #d19a8c, #fcaae55c, #141414ce);
+}
+.box>img {
+object-fit: contain;
+width: 100%;
+height: 100%;
+transform: translate(-50%, 10%) scale(3);
+position: relative;
+z-index: -1;
+}
+.card:hover>.box img {
+opacity: 0;
+}
+.card:hover>.box {
+transform: scaleY(1.5);
+background-image: initial;
+background-color: #d19a8c;
+z-index: 2;
+cursor: pointer;
+}
+.card>a {
+position: absolute;
+display: block;
+width: 120px;
+text-align: center;
+color: rgba(255, 255, 255, 0.2);
+bottom: 0;
+left: 50%;
+transform: translate(-50%, -35%);
+font-size: 28px;
+z-index: 100;
+transition: .2s;
+}
+.card:hover a {
+color: #fff;
+transform: translate(-50%, 250%);
+}
+.card:hover .character>img {
+opacity: 1;
+}
+.card>.character {
+position: absolute;
+top: -100px;
+left: -400px;
+width: 100%;
+height: 100%;
+z-index: 3;
+pointer-events: none;
+}
+.character>img {
+width: 950px;
+height: 820px;
+object-fit: contain;
+opacity: 0;
+transition: all .3s;
+position: relative;
+z-index: -10;
+}
+
+p{
+            color: #f1ede4;
+        }
+
+        .box3{
+            width: 100px;
+            height: 40px;
+            background-color: #a22624;
+            position: fixed;
+            left: 0;
+            top: 0;
+            border-radius: 20px;
+        }
+        .box3 p{
+            padding: 5px;
+            font-size: 20px;
+        }
+</style>
+</head>
+
+<body>
+<div class="shell">
+<div class="card">
+<div class="box">
+<img src="./photo/11.png" />
+</div>
+<div class="character">
+<img src="./photo/11.png" />
+</div>
+<a href="./index.html"><h4>莫愁女</h4></a>
+</div>
+<div class="card">
+<div class="box">
+<img src="./photo/12.png" />
+</div>
+<div class="character">
+<img src="./photo/12.png" />
+</div>
+<a href=""><h4>朱瞻垍</h4></a>
+</div>
+<div class="card">
+<div class="box">
+<img src="./photo/13.png" />
+</div>
+<div class="character">
+<img src="./photo/13.png" />
+</div>
+<a href=""><h4>宋玉</h4></a>
+</div>
+<div class="card">
+<div class="box">
+<img src="./photo/14.png" />
+</div>
+<div class="character">
+<img src="./photo/14.png" />
+</div>
+<a href=""><h4>朱祐杬</h4></a>
+</div>
+<div class="card">
+<div class="box">
+<img src="./photo/15.png" />
+</div>
+<div class="character">
+<img src="./photo/15.png" />
+</div>
+<a href=""><h4>朱栋</h4></a>
+</div>
+<div class="card">
+<div class="box">
+<img src="./photo/16.png" />
+</div>
+<div class="character">
+<img src="./photo/16.png" />
+</div>
+<a href=""><h4>朱厚熜</h4></a>
+</div>
+<div class="card">
+<div class="box">
+<img src="./photo/17.png" />
+</div>
+<div class="character">
+<img src="./photo/17.png" />
+</div>
+<a href=""><h4>李济</h4></a>
+</div>
+ <div class="card">
+<div class="box">
+</div>
+<div class="character">
+</div>
+<a href="SHEHUI.html"><h4>查看更多</h4></a>
+</div>
+</div>
+
+<div class="box3">
+    <a href="SHEHUI.html">
+        <p>  <<返回  </p>
+    </a>
+</div>
+</body>
+
+</html>
